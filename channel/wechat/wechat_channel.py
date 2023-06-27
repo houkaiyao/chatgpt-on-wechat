@@ -40,7 +40,7 @@ def handler_single_msg(msg):
 def handler_group_msg(msg):
     current_time = datetime.now()
     current_hour = current_time.hour
-    if 8 <= current_hour < 21:
+    if 8 <= current_hour < 22:
         try:
             cmsg = WechatMessage(msg, True)
         except NotImplementedError as e:
